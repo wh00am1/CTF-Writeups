@@ -9,6 +9,8 @@
 
 [Programming](#Programming)
 
+[Crypto](#Crypto)
+
 ## Web
 
 ### Basic Injection
