@@ -1,8 +1,22 @@
 # CTF-Writeups
 
-## [CTFLearn](https://ctflearn.com/challenge/1/browse) 
-難度:easy [writeup](https://github.com/wh00am1/CTF-Writeups/blob/master/ctflearn.com/easy/README.md)
+## ROP Tools
 
-難度:medium [writeup](https://github.com/wh00am1/CTF-Writeups/blob/master/ctflearn.com/medium/README.md)
+`ROPGadget` for finding gadgets in binary
 
-難度:hard [writeup](https://github.com/wh00am1/CTF-Writeups/blob/master/ctflearn.com/hard/README.md)
+`objdump` disassembler
+
+## PWN
+
+Python `pwntools`
+
+`pwndbg`  `radare2` reverse engineering tool
+
+
+## Crypto
+
+Python `gmpy2` `libnum` for solving RSA	
+
+## Other
+
+TBD
