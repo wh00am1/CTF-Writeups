@@ -172,9 +172,7 @@ let's find the offset first(with readelf):
 `404: 000000000006f690   456 FUNC    WEAK   DEFAULT   13 puts@@GLIBC_2.2.5`
 
 then use `one_gadget` to find the address to jump:
-    0x45216 execve("/bin/sh", rsp+0x30, environ)
-    constraints:
-      rax == NULL
+ `0x45216 execve("/bin/sh", rsp+0x30, environ)`
 
 
 now we get the address, let's craft our payload:
