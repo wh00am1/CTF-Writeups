@@ -137,7 +137,7 @@ from the disassembly, we know that this binary contains `system()` function:
 
 `0x004006bf      e86cfeffff     call sym.imp.system`
 
-before we can call `system()`, we have to clean the `RDI` register
+after we put system() in stack, we have to pop "/bin/sh" to rdi
 
 let's find some gadget using `ROPgadget`
 
