@@ -80,7 +80,7 @@ Same as the previous challenge, but this time the stack size is `0x20`
 
 ### Angelboy Pwn-2(50 pts)
 
-Same as the previous challenge, but we're going to jump to our own shellcode instead of the given shell funvtion
+Same as the previous challenge, but we're going to jump to our own shellcode instead of the given shell function
 
 we can write the shellcode in the `Name` varible(because the shellcode made by `shellcraft()` is only 44 bytes)
 
@@ -137,7 +137,7 @@ from the disassembly, we know that this binary contains `system()` function:
 
 `0x004006bf      e86cfeffff     call sym.imp.system`
 
-before we can call `system()`, we have to clean the `RDI` register
+after we put system() in stack, we have to pop "/bin/sh" to rdi
 
 let's find some gadget using `ROPgadget`
 
