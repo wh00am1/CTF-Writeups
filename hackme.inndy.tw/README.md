@@ -18,7 +18,7 @@ use pwntools instead of netcat
 
 ### homework
 
-calculate the return address based on the disassembly
+Calculate the return address based on the disassembly
 
 ### toooomuch
 
