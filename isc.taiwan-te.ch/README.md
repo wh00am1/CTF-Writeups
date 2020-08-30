@@ -105,3 +105,9 @@ so we getshell
 
 ### ret2plt
 
+We first write our string "/bin/sh" in the input
+
+then we use `pop rdi` gadget to pop our "/bin/sh" to `RDI`
+
+Finally, call the `system()` function
+
