@@ -26,4 +26,8 @@ just guess the number lol
 
 ### toooomuch2
 
-first use `gets()` to write the shellcode to Bss segment, then redirect execution to Bss
+First use `gets()` to write the shellcode to Bss segment, then redirect execution to Bss
+
+### ROP
+
+Simply use `ROPgadget` to find ROP chain
