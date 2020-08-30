@@ -100,3 +100,9 @@ Xor `RAX` with itself to set it to NULL
 Finally, we can do our syscall
 
 ### gothijack
+
+Overwrite the `puts()` to our own shellcode, then the `puts()` becomes our shellcode,
+
+so we getshell
+
+###  
