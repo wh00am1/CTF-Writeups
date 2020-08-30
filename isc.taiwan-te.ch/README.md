@@ -75,4 +75,16 @@ Simply write the shellcode to `<name>` and jump to it
 
 ### rop
 
-In this challenge, we're gonna
+This is a simple ROP challenge
+
+First write the string "/bin/sh" to `.data` segment, then call code 59 (`execve()`)
+
+But the execve() function looks like this:
+
+`execve(const char *filename, const char *const argv[], const char *const envp[]);`
+
+We want both `argv` and `envp` be NULL, so we're gonna `pop` the NULLs in `.data` to them
+
+The `argv` and `envp` is stored in `RSI` and `RDX`, so we have to set these to registers to NULL
+
+First, we put "/bin/sh" in `RDI` 
