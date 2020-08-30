@@ -22,7 +22,7 @@ calculate the return address based on the disassembly
 
 ### toooomuch
 
-just guess the number lol
+Just guess the number lol
 
 ### toooomuch2
 
