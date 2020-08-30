@@ -31,3 +31,7 @@ First use `gets()` to write the shellcode to Bss segment, then redirect executio
 ### ROP
 
 Simply use `ROPgadget` to find ROP chain
+
+### ROP 2
+
+This time `ROPgadget` won't work, so we have to craft our own ropchain.
