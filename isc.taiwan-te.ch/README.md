@@ -98,3 +98,5 @@ Next, use the `PPR` gadget to pop NULLs to `RSI` and `RDX`
 Xor `RAX` with itself to set it to NULL
 
 Finally, we can do our syscall
+
+### gothijack
