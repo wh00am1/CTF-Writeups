@@ -6,7 +6,7 @@
 
 Use php-file-include vulnerability to download the login.php
 
-## pwn
+## Pwn
 
 ### fast
 
