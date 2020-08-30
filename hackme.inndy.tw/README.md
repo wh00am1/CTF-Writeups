@@ -4,7 +4,7 @@
 
 ### LFI
 
-use php-file-include vulnerability to download the login.php
+Use php-file-include vulnerability to download the login.php
 
 ## pwn
 
