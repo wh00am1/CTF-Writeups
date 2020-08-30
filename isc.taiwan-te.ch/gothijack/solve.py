@@ -1,7 +1,6 @@
 #!/usr/bin/env python2
 
 from pwn import *
-import pwnlib.elf
 
 context.log_level = 'debug'
 context.arch = 'amd64'
