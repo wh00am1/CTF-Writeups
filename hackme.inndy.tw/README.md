@@ -14,7 +14,7 @@ first send the string "yes I know" , then use `eval()` to complete the math prob
 
 ### catflag
 
-use pwntools instead of netcat
+Use pwntools instead of netcat
 
 ### homework
 
