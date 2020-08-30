@@ -75,8 +75,6 @@ Simply write the shellcode to `<name>` and jump to it
 
 ### rop
 
-This is a simple ROP challenge
-
 First write the string "/bin/sh" to `.data` segment, then call code 59 (`execve()`)
 
 But the execve() function looks like this:
@@ -105,4 +103,5 @@ Overwrite the `puts()` to our own shellcode, then the `puts()` becomes our shell
 
 so we getshell
 
-###  
+### ret2plt
+
