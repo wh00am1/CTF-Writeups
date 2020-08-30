@@ -45,3 +45,13 @@ The ROP chain looks like this:
 First `syscall(3)` to read() the shellcode to buffer, then use `syscall(8)` to write() "/bin/sh" to Bss
 
 For execution, use `syscall(11)` to execve() our input "/bin/sh" 
+
+### echo
+
+A simple format string challenge
+
+The offset is 7, so use pwntool's `fmtstr_payload` to overwrite `printf()` to `system()`
+
+This way, `printf("/bin/sh")` becomes system("/bin/sh") and we get a shell
+
+ 
