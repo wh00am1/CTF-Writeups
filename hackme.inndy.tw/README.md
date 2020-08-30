@@ -10,7 +10,7 @@ use php-file-include vulnerability to download the login.php
 
 ### fast
 
-first send the string "yes I know" , then use `eval()` to complete the math problems quickly
+First send the string "yes I know" , then use `eval()` to complete the math problems quickly
 
 ### catflag
 
