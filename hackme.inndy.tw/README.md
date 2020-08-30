@@ -54,4 +54,12 @@ The offset is 7, so use pwntool's `fmtstr_payload` to overwrite `printf()` to `s
 
 This way, `printf("/bin/sh")` becomes system("/bin/sh") and we get a shell
 
- 
+### smashthestack
+
+The program has canary, so the `__stack_chk_fail` won't let us redirect code execution 
+
+but it'll print the content stored in `__libc_argv[0]`
+
+So we can simply overwrite the `__libc_argv[0]` to the address to flag, 
+
+then the `__stack_chk_fail` will print the flag for us.
