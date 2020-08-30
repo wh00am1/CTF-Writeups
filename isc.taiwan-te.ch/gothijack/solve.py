@@ -1,8 +1,6 @@
 #!/usr/bin/env python2
 
 from pwn import *
-
-import pwnlib.shellcraft
 import pwnlib.elf
 
 context.log_level = 'debug'
