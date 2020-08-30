@@ -111,4 +111,10 @@ then we use `pop rdi` gadget to pop our "/bin/sh" to `RDI`
 
 Finally, call the `system()` function
 
-###
+### ret2libc
+
+First use the leaking function in the program to leak `puts()` address
+
+Then use the libc given, we can calculate the base address of libc in the remote process
+
+Jump to where one_gadget is, we get a shell
