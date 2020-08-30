@@ -63,3 +63,12 @@ but it'll print the content stored in `__libc_argv[0]`
 So we can simply overwrite the `__libc_argv[0]` to the address to flag, 
 
 then the `__stack_chk_fail` will print the flag for us.
+
+### onepunch
+
+The program allows us to change the content of any address, so we can write our shellcode to `.text`
+
+Using IDA's `patch key` can help us to know what value to enter can make the main function a endless-loop
+
+Then we patch it back, the program directly execute the shellcode we just write
+
