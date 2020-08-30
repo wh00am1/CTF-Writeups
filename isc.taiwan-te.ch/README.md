@@ -87,4 +87,14 @@ We want both `argv` and `envp` be NULL, so we're gonna `pop` the NULLs in `.data
 
 The `argv` and `envp` is stored in `RSI` and `RDX`, so we have to set these to registers to NULL
 
-First, we put "/bin/sh" in `RDI` 
+First, we put the address of `.data` segment in `RDI`
+
+Then put "/bin/sh" in `RSI`
+
+Then move "/bin/sh" to `.data` (where `RDI` points to)
+
+Next, use the `PPR` gadget to pop NULLs to `RSI` and `RDX`
+
+Xor `RAX` with itself to set it to NULL
+
+Finally, we can do our syscall
