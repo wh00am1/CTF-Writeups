@@ -42,7 +42,7 @@ I'm gonna use Bss again but using `syscall` to `execve`
 
 The ROP chain looks like this:
 
-First `syscall(3)` to read() the shellcode to buffer, then use `syscall(8)` to write() "/bin/sh" to Bss
+First `syscall(3)` to write "/bin/sh" to Bss
 
 For execution, use `syscall(11)` to execve() our input "/bin/sh" 
 
