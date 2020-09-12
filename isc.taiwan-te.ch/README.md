@@ -99,9 +99,9 @@ Finally, we can do our syscall
 
 ### gothijack
 
-Overwrite the `puts()` to our own shellcode, then the `puts()` becomes our shellcode,
+Write shellcode to `name`, then set to `puts()`'s GOT address, then set `puts()`'s GOT to `name`
 
-so we getshell
+And we get a shell
 
 ### ret2plt
 
